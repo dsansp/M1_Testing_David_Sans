@@ -3,7 +3,18 @@ import java.util.*;
 
 
 public class CRMGames {
+    public static void showmenu(){
+        System.out.println("Selecciona una opción:");
 
+        System.out.println("1 - Crear un nuevo producto");
+        System.out.println("2 - Ver todos los productos");
+        System.out.println("3 - Ver un producto (por Código de barras)");
+        System.out.println("4 - Modificar un producto (por Código de barras)");
+        System.out.println("5 - Borrar un producto (por Código de barras)");
+        System.out.println("6 - Borrar todos los registros");
+        System.out.println("7 - Vender un producto");
+        System.out.println("8 - Salir");
+    }
 
     public static void main(String[] args) {
 
@@ -25,16 +36,7 @@ public class CRMGames {
 
             Scanner scanner = new Scanner(System.in);
 
-            System.out.println("Selecciona una opción:");
-
-            System.out.println("1 - Crear un nuevo producto");
-            System.out.println("2 - Ver todos los productos");
-            System.out.println("3 - Ver un producto (por Código de barras)");
-            System.out.println("4 - Modificar un producto (por Código de barras)");
-            System.out.println("5 - Borrar un producto (por Código de barras)");
-            System.out.println("6 - Borrar todos los registros");
-            System.out.println("7 - Vender un producto");
-            System.out.println("8 - Salir");
+            showmenu();
             try {
             int opcion = scanner.nextInt();
 
@@ -277,11 +279,6 @@ public class CRMGames {
                                     }
                                 }
                             }
-
-
-                            // si codeOcupado es verdadero entonces mostramos un error por falta de stock de  producto
-                            // si codeOcupado es true entonces pasamos al  siguiente paso del bucle while
-
                         }
                     }
                 }
@@ -313,5 +310,6 @@ public class CRMGames {
 
         }
     }
-}
+    }
+
 
